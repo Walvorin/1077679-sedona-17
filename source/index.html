@@ -3,10 +3,102 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <meta name="description" content="">
   </head>
   <body>
+    <header class="main-header">
+      <nav class="main-nav">
+        <a href="#" class="logo-link" target="_self">
+          <img class="logo-link__img" width="102" height="83" src="http://placehold.it/102x83" alt="Логотип Sedona" >
+        </a>
+        <ul class="main-list">
+          <li class="main-list__item main-list__item--change"><a href="#" class="main-list__link">Главная</a></li>
+          <li class="main-list__item main-list__item--change"><a href="#" class="main-list__link">Фото и видео</a></li>
+          <li class="main-list__item main-list__item--change"><a href="#" class="main-list__link">Форма отзыва</a></li>
+          <li class="main-list__item main-list__item--change"><a href="#" class="main-list__link">Htmlacademy</a></li>
+        </ul>
+        <button type="button" class="burger-menu">Бургер закрыть открыть</button>
+      </nav>
+    </header>
+    <main class="main-content">
+      <section class="intro-content">
+        <h1 class="h1-main-page visibility-hidden">Добро пожаловать в Седону!</h1>
+        <div class="intro-content__img-mount intro-content__img-mount--substrate">
+          <img class="intro-content__wellcome-img intro-content__wellcome-img--position" width="282" height="214" src="http://placehold.it/282x214" alt="Фото Добро пожаловать в Седону">
+        </div>
+        <h2 class="h2-main-page h2-main-page--move">Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
+        <p class="intro-content__text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+      </section>
+      <section class="features">
+        <ul class="features-list">
+          <li class="features-item features-list__item  features-list__item--blue-bg">
+            <h3 class="features-item__h3">Настоящий городок</h3>
+            <span class="features-item__enumeration">- №1 -</span>
+            <p class="features-item__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
+          </li>
+          <li class="features-item features-list__item">
+            <img class="features-item__img" width="320" height="260" src="http://placehold.it/320x260" alt="Обустройство городка Седона">
+          </li>
+          <li class="features-item features-list__item">
+            <h3 class="features-item__h3 features-item__h3--black-text">Жилье</h3>
+            <p class="features-item__description features-item__description--black-text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+          </li>
+          <li class="features-item features-list__item">
+            <h3 class="features-item__h3 features-item__h3--black-text">Сувениры</h3>
+            <p class="features-item__description features-item__description--black-text">Не только китайского, но и местного производства!</p>
+          </li>
+          <li class="features-item features-list__item">
+            <h3 class="features-item__h3 features-item__h3--black-text">Еда</h3>
+            <p class="features-item__description features-item__description--black-text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+          </li>
+          <li class="features-item features-list__item  features-list__item--blue-bg">
+            <h3 class="features-item__h3">Там есть мост дьявола</h3>
+            <span class="features-item__enumeration"> - №2 - </span>
+            <p class="features-item__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+          </li>
+          <li class="features-item features-list__item">
+            <img class="features-item__img" width="320" height="260" src="http://placehold.it/320x260" alt="Пейзаж гор, скал и рассщелины с мостом">
+          </li>
+          <li class="features-item features-list__item features-list__item--grey-bg">
+            <h3 class="features-item__h3 features-item__h3--black-text">Небольшая площадь</h3>
+            <span class="features-item__enumeration features-item__enumeration--black-text"> - №3 - </span>
+            <p class="features-item__description features-item__description--black-text">Все интересные места находятся очень близко</p>
+          </li>
+          <li class="features-item features-list__item features-list__item--grey-bg">
+            <h3 class="features-item__h3 features-item__h3--black-text">Красивая дорога</h3>
+            <span class="features-item__enumeration features-item__enumeration--black-text"> - №4 - </span>
+            <p class="features-item__description features-item__description--black-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </li>
+          <li class="features-item features-list__item features-list__item--grey-bg">
+            <h3 class="features-item__h3 features-item__h3--black-text">Мало туристов</h3>
+            <span class="features-item__enumeration features-item__enumeration--black-text"> - №5 - </span>
+            <p class="features-item__description features-item__description--black-text">Большинство едет в Гранд Каньон и толпится там</p>
+          </li>
+        </ul>
+      </section>
+    </main>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+    <footer class="main-footer">
+      <p class="main-footer__visitsedona">#Visitsedona</p>
+      <article class="socials">
+        <ul class="social-list">
+          <li class="social-item">
+            <span class="visibility-hidden">Twitter</span>
+            <img class="social-item__icon-tw" width="18" height="14" src="http://placehold.it/18x14" alt="Иконка Твиттер" >
+          </li>
+          <li class="social-item">
+            <span class="visibility-hidden">Facebook</span>
+            <img class="social-item__icon-fb" width="9" height="18" src="http://placehold.it/9x18" alt="Иконка Фейсбук" >
+          </li>
+          <li class="social-item">
+            <span class="visibility-hidden">Youtube</span>
+            <img class="social-item__icon-youtube" width="20" height="14" src="http://placehold.it/20x14" alt="Иконка Ютуб" >
+          </li>
+        </ul>
+      </article>
+    </footer>
+
+    <!-- <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p> -->
 
   </body>
 </html>
