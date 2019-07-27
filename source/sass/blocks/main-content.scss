@@ -1,27 +1,70 @@
-@mixin subtitle {
-  font-size: 18px;
-  line-height: 26px;
-  color: red;
+
+$black: #000000;
+$white: #ffffff;
+$blue: #81b3d2;
+$bigtext: uppercase;
+
+
+@mixin sizetext ($sizefont, $lineheight,$color,$bigtext) {
+  font-size: $sizefont;
+  line-height: $lineheight;
+  color: $color;
+  text-transform: $bigtext;
+  font-family: 'PT Sans', sans-serif;
 }
-$black: '#000000';
-$white: '#ffffff';
+
+@mixin imgsetup($bgz, $bgp) {
+  background-repeat: no-repeat;
+  background-size: $bgz;
+  background-position: $bgp;
+}
+
+
+
+
+
+
 
 .intro-content{
   position: relative;
+  padding: 0;
+  padding-bottom: 44px;
 }
 
-.intro-content::after {
+.intro-content--after::after {
   content: "";
   display: block;
   width: 100%;
-  height: 26px;
-  background-image: url(../img/bg-intro-triangle-mobile.svg);
+  height: 37px;
+  background-image: url(../img/bg-triangle.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position:bottom;
   position: absolute;
-  bottom: 0;
+  bottom: 0px;
+  z-index: 1;
 }
+
+.subtitle-two {
+  @include sizetext(18px,26px,$black,$bigtext)
+  text-align: center;
+
+}
+
+.subtitle-two--move {
+  margin: 0;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.intro-content__text {
+  @include sizetext(14px,24px,$black,$bigtext)
+  margin: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+}
+
 
 
 .intro-block-img {
@@ -32,6 +75,11 @@ $white: '#ffffff';
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.intro-block-img--mini {
+  width: 320px;
+  height: 158px;
 }
 
 .intro-block-img::after {
@@ -47,47 +95,127 @@ $white: '#ffffff';
   bottom: 0;
 }
 
-/*      Списки преимуществ     */
-
-.features-item--blue-bg {
-  @include subtitle;
-  background-color: #81b3d2;
+.intro-block-img--normal {
+  margin: 0;
+  margin-bottom: 46px;
 }
 
-.features-item--icon-house::before {
-  content: "";
-  display: block;
-  width:  39px;
-  height: 37px;
-  background-image: url(../img/icon-house.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
- background-position: center;
+/*      Списки преимуществ на главной    */
+.features-list {
+  padding: 0;
+  margin: 0;
+}
+.features-item {
+  list-style: none;
 }
 
-.features-item--icon-suvenir::before {
-  content: "";
-  display: block;
-  width: 33px;
-  height: 38px;
-  background-image: url(../img/icon-gift.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
+.features-list__icon {
+  padding-bottom: 17px;
 }
 
-.features-item--icon-burger::before {
-  content: "";
-  display: block;
-  width: 40px;
+.features-item__svg--fill {
+  fill: $blue;
+}
+
+.features-item--icon-burger svg {
+  width: 39px;
   height: 35px;
-  background-image: url(../img/icon-burger.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
 }
+
+.features-item--icon-suvenir svg {
+  width: 32px;
+  height: 38px;
+}
+
+.features-item--icon-house svg {
+  width: 39px;
+  height: 37px;
+}
+
+.features-item--blue-bg-one {
+  background-color: $blue;
+  text-align: center;
+  margin: 0;
+  margin-top: -20px;
+  padding-top: 60px;
+  padding-bottom: 42px;
+}
+
+.features-item--blue-bg-two {
+  background-color: $blue;
+  text-align: center;
+  padding-top: 41px;
+  padding-bottom: 41px;
+}
+
+.features-item__h3 {
+  @include sizetext(18px, 26px,#ffffff,$bigtext);
+  padding: 0;
+  margin: 0;
+  margin-bottom: 17px;
+}
+
+.features-item__enumeration {
+  @include sizetext(14px, 21px,#ffffff,$bigtext);
+  margin: 0;
+
+}
+
+.features-item__description {
+  @include sizetext(14px, 21px,#ffffff,$bigtext);
+  padding: 0;
+  margin: 0;
+  margin-top: 13px;
+}
+
+.features-item--icon-house, .features-item--icon-suvenir, .features-item--icon-burger {
+  color: #000000;
+}
+
+.features-item__h3--black {
+  @include sizetext(18px, 26px,#000000,$bigtext);
+  margin-bottom: 13px;
+}
+
+.features-item__description--black {
+  @include sizetext(14px, 21px,#000000,$bigtext);
+}
+
+.features-item--grey-bg {
+
+  background-color: #eeeeee;
+}
+
+.features-item__wrapper {
+  padding-top: 33px;
+  padding-bottom: 33px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  width: 80%;
+margin: 0 auto;
+}
+
+.features-item__wrapper--none {
+  border: none;
+}
+
+.features-item__enumeration--black, .features-item__description--black {
+  @include sizetext(14px, 21px,#000000,$bigtext);
+}
+
+
 
 /*      Конец Списки преимуществ     */
+
+/*      Карта навигации        */
+
+.map-navigation {
+  width: 100%;
+  height: 350px;
+
+}
 
 .map-navigation--bg {
   background-image: url(../img/bg-map-mobile@1x.jpg);
@@ -95,3 +223,85 @@ $white: '#ffffff';
   background-size: contain;
   background-position: center;
 }
+
+/*     End Карта навигации        */
+
+/*        Страница с отзывами туристов         */
+
+.feedback-wrapper {
+  width: 100%;
+}
+
+.feedback-block {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.feedback-tourists__img {
+  width: 280px;
+  margin-bottom: 17px;
+}
+
+.feedback-tourists__h3 {
+  @include sizetext(14px,24px,$black,$bigtext);
+  margin: 0;
+  margin-bottom: 6px;
+}
+
+.feedback-author {
+  @include sizetext(14px,24px,#333333, none);
+  padding: 0;
+  margin: 0;
+  margin-bottom: 9px;
+}
+
+.reaction-tourists {
+  margin: 0;
+  padding: 0;
+}
+
+.feedback-tourists__like-total {
+  @include sizetext(14px,24px,$black, none);
+  font-weight: bold;
+}
+
+.feedback-tourists__like-btn {
+  border: none;
+  background: transparent;
+}
+
+.feedback-tourists__img {
+  width: 280px;
+  height: 280px;
+}
+
+.feedback-tourists__img--boris {
+  background-image: url(../img/photo-sunset-mobile@1x.jpg);
+  @include imgsetup(contain, center);
+}
+
+.feedback-tourists__img--sergei {
+  background-image: url(../img/photo-cactus-mobile@1x.jpg);
+  @include imgsetup(contain, center);
+}
+
+.feedback-tourists__img--petr {
+  background-image: url(../img/photo-roads-mobile@1x.jpg);
+  @include imgsetup(contain, center);
+}
+
+.feedback-tourists__img--anton {
+  background-image: url(../img/photo-bridge-mobile@1x.jpg);
+  @include imgsetup(contain, center);
+}
+
+.feedback-tourists__like-img {
+  fill: rgba(0, 0, 0,  0.3);
+}
+
+/*        End Страница с отзывами          */
