@@ -1,5 +1,7 @@
 .main-footer {
-  background-color: #ffffff;
+  width: 320px;
+  margin: 0 auto;
+  background-color: $white;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -8,22 +10,24 @@
 }
 
 .main-footer__visitsedona {
-  @include sizetext(21px, 26px,#000000,$bigtext);
+  @include sizetext(21px, 26px,$black,$bigtext);
   font-weight: bold;
   margin-bottom: 40px;
 }
 
 .great-htmlacademy__span {
-  @include sizetext(14px, 26px,#000000,$bigtext);
+  @include sizetext(14px, 26px,$black,$bigtext);
 }
 
 .great-htmlacademy__svg {
   display: block;
-  fill: #000000;
+  fill: $black;
   width: 27px;
   height: 34px;
 }
+
 /*      Socials:     */
+
 .social-list {
   display: flex;
   flex-direction: row;
@@ -52,18 +56,18 @@ justify-content: center;
 }
 
 .social-item__icon-fb {
-  fill: #ffffff;
+  fill: $white;
   width: 9px;
   height: 18px;
 }
 
 .social-item__icon-tw {
-  fill: #ffffff;
+  fill: $white;
   width: 19px;
   height: 14px;
 }
 .social-item__icon-youtube {
- fill: #ffffff;
+ fill: $white;
  width: 20px;
  height: 14px;
 }

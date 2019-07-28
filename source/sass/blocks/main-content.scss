@@ -1,16 +1,16 @@
 
-$black: #000000;
-$white: #ffffff;
-$blue: #81b3d2;
-$bigtext: uppercase;
+$black: #000000 !global;
+$white: #ffffff !global;
+$grey: #eeeeee !global;
+$blue: #81b3d2 !global;
+$bigtext: uppercase !global;
 
-
-@mixin sizetext ($sizefont, $lineheight,$color,$bigtext) {
+@mixin sizetext ($sizefont, $lineheight, $color, $bigtext) {
   font-size: $sizefont;
   line-height: $lineheight;
   color: $color;
   text-transform: $bigtext;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', Arial, sans-serif;
 }
 
 @mixin imgsetup($bgz, $bgp) {
@@ -19,17 +19,19 @@ $bigtext: uppercase;
   background-position: $bgp;
 }
 
-
-
-
-
-
+.main-content {
+  width: 320px;
+  margin: 0 auto;
+}
 
 .intro-content{
+  width: 100%;
   position: relative;
   padding: 0;
   padding-bottom: 44px;
 }
+
+
 
 .intro-content--after::after {
   content: "";
@@ -65,13 +67,12 @@ $bigtext: uppercase;
   text-align: center;
 }
 
-
-
 .intro-block-img {
   position: relative;
   width: 320px;
   height: 389px;
   background-image: url(../img/bg-back-mobile@1x.jpg);
+  background-color: #e1eef6;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -101,12 +102,19 @@ $bigtext: uppercase;
 }
 
 /*      Списки преимуществ на главной    */
+.features {
+  width: 100%;
+}
+
 .features-list {
   padding: 0;
   margin: 0;
+  width: 100%;
 }
 .features-item {
   list-style: none;
+  display: block;
+  width: 100%;
 }
 
 .features-list__icon {
@@ -149,20 +157,20 @@ $bigtext: uppercase;
 }
 
 .features-item__h3 {
-  @include sizetext(18px, 26px,#ffffff,$bigtext);
+  @include sizetext(18px, 26px,$white,$bigtext);
   padding: 0;
   margin: 0;
   margin-bottom: 17px;
 }
 
 .features-item__enumeration {
-  @include sizetext(14px, 21px,#ffffff,$bigtext);
+  @include sizetext(14px, 21px,$white,$bigtext);
   margin: 0;
 
 }
 
 .features-item__description {
-  @include sizetext(14px, 21px,#ffffff,$bigtext);
+  @include sizetext(14px, 21px,$white,$bigtext);
   padding: 0;
   margin: 0;
   margin-top: 13px;
@@ -173,17 +181,17 @@ $bigtext: uppercase;
 }
 
 .features-item__h3--black {
-  @include sizetext(18px, 26px,#000000,$bigtext);
+  @include sizetext(18px, 26px,$black,$bigtext);
   margin-bottom: 13px;
 }
 
 .features-item__description--black {
-  @include sizetext(14px, 21px,#000000,$bigtext);
+  @include sizetext(14px, 21px,$black,$bigtext);
 }
 
 .features-item--grey-bg {
 
-  background-color: #eeeeee;
+  background-color: $grey;
 }
 
 .features-item__wrapper {
@@ -202,10 +210,8 @@ margin: 0 auto;
 }
 
 .features-item__enumeration--black, .features-item__description--black {
-  @include sizetext(14px, 21px,#000000,$bigtext);
+  @include sizetext(14px, 21px,$black,$bigtext);
 }
-
-
 
 /*      Конец Списки преимуществ     */
 
@@ -219,6 +225,7 @@ margin: 0 auto;
 
 .map-navigation--bg {
   background-image: url(../img/bg-map-mobile@1x.jpg);
+  background-color: #f4f0ed;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -283,21 +290,25 @@ margin: 0 auto;
 .feedback-tourists__img--boris {
   background-image: url(../img/photo-sunset-mobile@1x.jpg);
   @include imgsetup(contain, center);
+  background-color: #ffc67f;
 }
 
 .feedback-tourists__img--sergei {
   background-image: url(../img/photo-cactus-mobile@1x.jpg);
   @include imgsetup(contain, center);
+  background-color: #d2774b;
 }
 
 .feedback-tourists__img--petr {
   background-image: url(../img/photo-roads-mobile@1x.jpg);
   @include imgsetup(contain, center);
+  background-color: #39392d;
 }
 
 .feedback-tourists__img--anton {
   background-image: url(../img/photo-bridge-mobile@1x.jpg);
   @include imgsetup(contain, center);
+  background-color: #ae7355;
 }
 
 .feedback-tourists__like-img {
