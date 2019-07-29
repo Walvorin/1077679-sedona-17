@@ -1,0 +1,35 @@
+/*      Раздел Хедер      */
+
+.main-header {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.main-nav {
+background-color: #ffffff;
+}
+
+
+.main-nav-list__item {
+  list-style: none;
+  width: 320px;
+  box-sizing: border-box;
+}
+.main-nav-list__link {
+  font-size: 18px;
+  line-height: 40px;
+  color: #ffffff;
+  font-family: 'PT Sans', Arial, sans-serif;
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  background-color: #81b3d2;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+  width: 100%;
+}
+
+/*      Конец Раздел Хедер      */
