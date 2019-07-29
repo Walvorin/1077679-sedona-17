@@ -6,7 +6,7 @@
 }
 
 .main-nav {
-background-color: #ffffff;
+background-color: $white;
 }
 
 
@@ -16,10 +16,8 @@ background-color: #ffffff;
   box-sizing: border-box;
 }
 .main-nav-list__link {
-  font-size: 18px;
-  line-height: 40px;
-  color: #ffffff;
-  font-family: 'PT Sans', Arial, sans-serif;
+  @include sizetext(18px, 40px, $white, $bigtext)
+
   text-transform: uppercase;
   display: block;
   text-align: center;
