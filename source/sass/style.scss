@@ -13,26 +13,7 @@
          font-weight: bold;
          font-style: normal;}
 
-         $black: #000000 !global;
-         $white: #ffffff !global;
-         $grey: #eeeeee !global;
-         $blue: #81b3d2 !global;
-         $bigtext: uppercase !global;
-
-         @mixin sizetext ($sizefont, $lineheight, $color, $bigtext) {
-           font-size: $sizefont;
-           line-height: $lineheight;
-           color: $color;
-           text-transform: $bigtext;
-           font-family: 'PT Sans', Arial, sans-serif;
-         }
-
-         @mixin imgsetup($bgz, $bgp) {
-           background-repeat: no-repeat;
-           background-size: $bgz;
-           background-position: $bgp;
-         }
-
+@import 'variables/variables';
 @import 'blocks/body';
 @import 'blocks/header';
 @import 'blocks/main-content';
