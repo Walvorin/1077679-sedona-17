@@ -3,33 +3,30 @@
   margin: 0 auto;
 }
 
-.intro-content{
+.intro-content {
   width: 100%;
   position: relative;
   padding: 0;
   padding-bottom: 44px;
 }
 
-
-
 .intro-content--after::after {
   content: "";
   display: block;
   width: 100%;
   height: 37px;
-  background-image: url(../img/bg-triangle.svg);
+  background-image: url("../img/bg-triangle.svg");
   background-repeat: no-repeat;
   background-size: contain;
-  background-position:bottom;
+  background-position: bottom;
   position: absolute;
-  bottom: 0px;
+  bottom: 0 px;
   z-index: 1;
 }
 
 .subtitle-two {
   @include sizetext(18px,26px,$black,$bigtext)
-  text-align: center;
-
+    text-align: center;
 }
 
 .subtitle-two--move {
@@ -40,7 +37,7 @@
 
 .intro-content__text {
   @include sizetext(14px,24px,$black,$bigtext)
-  margin: 0;
+    margin: 0;
   padding-left: 20px;
   padding-right: 20px;
   text-align: center;
@@ -50,7 +47,7 @@
   position: relative;
   width: 320px;
   height: 389px;
-  background-image: url(../img/bg-back-mobile@1x.jpg);
+  background-image: url("../img/bg-back-mobile@1x.jpg");
   background-color: #e1eef6;
   background-repeat: no-repeat;
   background-size: cover;
@@ -67,10 +64,10 @@
   display: block;
   width: 100%;
   height: 26px;
-  background-image: url(../img/bg-intro-triangle-mobile.svg);
+  background-image: url("../img/bg-intro-triangle-mobile.svg");
   background-repeat: no-repeat;
   background-size: contain;
-  background-position:bottom;
+  background-position: bottom;
   position: absolute;
   bottom: 0;
 }
@@ -90,6 +87,7 @@
   margin: 0;
   width: 100%;
 }
+
 .features-item {
   list-style: none;
   display: block;
@@ -145,7 +143,6 @@
 .features-item__enumeration {
   @include sizetext(14px, 21px,$white,$bigtext);
   margin: 0;
-
 }
 
 .features-item__description {
@@ -155,7 +152,9 @@
   margin-top: 13px;
 }
 
-.features-item--icon-house, .features-item--icon-suvenir, .features-item--icon-burger {
+.features-item--icon-house,
+.features-item--icon-suvenir,
+.features-item--icon-burger {
   color: #000000;
 }
 
@@ -181,14 +180,15 @@
   text-align: center;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   width: 80%;
-margin: 0 auto;
+  margin: 0 auto;
 }
 
 .features-item__wrapper--none {
   border: none;
 }
 
-.features-item__enumeration--black, .features-item__description--black {
+.features-item__enumeration--black,
+.features-item__description--black {
   @include sizetext(14px, 21px,$black,$bigtext);
 }
 
@@ -199,11 +199,10 @@ margin: 0 auto;
 .map-navigation {
   width: 100%;
   height: 350px;
-
 }
 
 .map-navigation--bg {
-  background-image: url(../img/bg-map-mobile@1x.jpg);
+  background-image: url("../img/bg-map-mobile@1x.jpg");
   background-color: #f4f0ed;
   background-repeat: no-repeat;
   background-size: contain;
@@ -231,6 +230,7 @@ margin: 0 auto;
 .feedback-tourists__img {
   width: 280px;
   margin-bottom: 17px;
+  height: 280px;
 }
 
 .feedback-tourists__h3 {
@@ -261,37 +261,32 @@ margin: 0 auto;
   background: transparent;
 }
 
-.feedback-tourists__img {
-  width: 280px;
-  height: 280px;
-}
-
 .feedback-tourists__img--boris {
-  background-image: url(../img/photo-sunset-mobile@1x.jpg);
-  @include imgsetup(contain, center);
+  @include imgsetup (contain, center);
+  background-image: url("../img/photo-sunset-mobile@1x.jpg");
   background-color: #ffc67f;
 }
 
 .feedback-tourists__img--sergei {
-  background-image: url(../img/photo-cactus-mobile@1x.jpg);
   @include imgsetup(contain, center);
+  background-image: url("../img/photo-cactus-mobile@1x.jpg");
   background-color: #d2774b;
 }
 
 .feedback-tourists__img--petr {
-  background-image: url(../img/photo-roads-mobile@1x.jpg);
   @include imgsetup(contain, center);
+  background-image: url("../img/photo-roads-mobile@1x.jpg");
   background-color: #39392d;
 }
 
 .feedback-tourists__img--anton {
-  background-image: url(../img/photo-bridge-mobile@1x.jpg);
   @include imgsetup(contain, center);
+  background-image: url("../img/photo-bridge-mobile@1x.jpg");
   background-color: #ae7355;
 }
 
 .feedback-tourists__like-img {
-  fill: rgba(0, 0, 0,  0.3);
+  fill: rgba(0, 0, 0, 0.3);
 }
 
 /*        End Страница с отзывами          */

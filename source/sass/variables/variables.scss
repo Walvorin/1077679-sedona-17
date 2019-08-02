@@ -1,15 +1,15 @@
-$black: #000000 !global;
-$white: #ffffff !global;
-$grey: #eeeeee !global;
-$blue: #81b3d2 !global;
-$bigtext: uppercase !global;
+$black: #000000;
+$white: #ffffff;
+$grey: #eeeeee;
+$blue: #81b3d2;
+$bigtext: uppercase;
 
 @mixin sizetext ($sizefont, $lineheight, $color, $bigtext) {
   font-size: $sizefont;
   line-height: $lineheight;
   color: $color;
   text-transform: $bigtext;
-  font-family: 'PT Sans', Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
 }
 
 @mixin imgsetup($bgz, $bgp) {
