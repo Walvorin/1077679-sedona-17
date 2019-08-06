@@ -3,8 +3,12 @@ $white: #ffffff;
 $grey: #eeeeee;
 $blue: #81b3d2;
 $bigtext: uppercase;
-$bgz: center;
-$bgp: contain;
+$bgz: contain;
+$bgp: center;
+
+/*  Media   */
+$desktop-width: 1280px;
+$tablet-width: 768px;
 
 @mixin sizetext ($sizefont, $lineheight, $color, $bigtext) {
   font-size: $sizefont;

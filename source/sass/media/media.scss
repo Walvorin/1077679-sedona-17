@@ -1,0 +1,10 @@
+@media (min-width: $tablet-width) {
+  body {
+    background-color: red;
+  }
+
+  .main-header {
+    width: 768px;
+    margin: 0 auto;
+  }
+}
