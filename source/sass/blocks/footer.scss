@@ -95,4 +95,13 @@
   height: 14px;
 }
 
+.htmlacademy-link:hover svg,
+.htmlacademy-link:focus svg {
+  fill: $blue;
+}
+
+.htmlacademy-link:active svg {
+  fill: rgba(0, 0, 0, 0.3);
+}
+
 /*      End Socials:     */
