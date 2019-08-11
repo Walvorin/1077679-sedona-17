@@ -1,8 +1,4 @@
 @media (min-width: $tablet-width) {
-  body {
-    background-color: red;
-  }
-
   .main-header {
     width: 768px;
     margin: 0 auto;
@@ -96,9 +92,9 @@
   }
 
   .intro-block-img__mount {
-    width: 461px;
+    width: 458px;
     height: 350px;
-    margin-left: -230.5px;
+    margin-left: -229px;
   }
 
   .subtitle-two {
@@ -298,5 +294,197 @@
 
   .reaction-tourists__petr {
     right: 37px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .main-header {
+    width: 1200px;
+  }
+
+  .main-nav {
+    padding-left: 90px;
+    padding-right: 65px;
+  }
+
+  .main-nav-list__item {
+    width: 170px;
+  }
+
+  .main-nav-list__item:first-child {
+    margin-right: 50px;
+  }
+
+  .main-nav-list__item:last-child {
+    margin-left: 67px;
+  }
+
+  .main-content {
+    width: 1200px;
+  }
+
+  .intro-block-img {
+    background-image: url("../img/bg-back-desktop@2x.jpg");
+    background-position: center 10px;
+  }
+
+  .intro-block-img::after {
+    background-image: url("../img/bg-intro-triangle-desktop.svg");
+  }
+
+  .intro-block-img--normal {
+    margin-bottom: 55px;
+  }
+
+  /*  Список преимуществ  */
+
+  .features-item--blue-bg-one,
+  .features-item--blue-bg-two {
+    width: 400px;
+  }
+
+  .features-item__img-town,
+  .features-item__img-bridge {
+    height: 256px;
+    width: 800px;
+  }
+
+  .features-list__icon {
+    width: 400px;
+  }
+
+  .features-item--grey-bg {
+    width: 400px;
+    padding: 50px;
+  }
+
+  .features-item:nth-child(9) {
+    padding: 50px;
+    padding-left: 65px;
+    padding-right: 65px;
+    padding-bottom: 50px;
+  }
+
+  .features-item:nth-child(10) {
+    padding-top: 50px;
+    padding-left: 65px;
+    padding-right: 65px;
+    padding-bottom: 50px;
+  }
+
+  .features-item__h3 {
+    width: 155px;
+    margin: 0 auto;
+    font-size: 21px;
+    line-height: 26px;
+    margin-bottom: 15px;
+  }
+
+  .features-item__enumeration {
+    margin-bottom: 26px;
+  }
+
+  .features-item--icon-house {
+    padding-top: 60px;
+    padding-right: 65px;
+    padding-left: 65px;
+    padding-bottom: 78px;
+  }
+
+  .features-item--icon-burger {
+    padding-top: 63px;
+    padding-right: 52px;
+    padding-left: 52px;
+    padding-bottom: 78px;
+  }
+
+  .features-item--icon-suvenir {
+    padding-top: 57px;
+    padding-left: 85px;
+    padding-right: 85px;
+    padding-bottom: 78px;
+  }
+
+  .features-item--icon-house svg {
+    width: 75px;
+    height: auto;
+  }
+
+  .features-item--icon-burger svg {
+    width: 77px;
+    height: auto;
+  }
+
+  .features-item--icon-suvenir svg {
+    width: 64px;
+    height: auto;
+  }
+
+  /*    Карта навигации    */
+
+  .map-navigation--bg {
+    background-image: url("../img/bg-map-desktop@2x.jpg");
+  }
+
+  /*    Footer    */
+
+  .main-footer {
+    width: 1200px;
+    padding-top: 36px;
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-bottom: 36px;
+  }
+
+  .great-htmlacademy__span {
+    line-height: 26px;
+    padding-bottom: 5px;
+  }
+
+  /*    Страница с отзывами туристов    */
+
+  .feedback-wrapper {
+    padding: 0;
+  }
+
+  .feedback-block {
+    width: 400px;
+  }
+
+  .feedback-tourists__img {
+    margin-bottom: 0;
+    height: 267px;
+  }
+
+  .feedback-tourists__img--boris {
+    height: 400px;
+  }
+
+  .feedblock-block__annotation {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin-top: -80px;
+    padding-top: 17px;
+  }
+
+  .feedback-tourists__h3 {
+    color: $white;
+  }
+
+  .feedback-author {
+    color: $white;
+  }
+
+  .feedback-tourists__like-img {
+    fill: $white;
+  }
+
+  .feedback-tourists__like-total {
+    color: $white;
+  }
+
+  .reaction-tourists {
+    bottom: 29px;
   }
 }
