@@ -1,15 +1,21 @@
-.visually-hidden {
-    position: absolute;
-    clip: rect(1px 1px 1px 1px);
-   /* IE6, IE7 */
-    clip: rect(1px, 1px, 1px, 1px);
-    padding:0;
-    border:0;
-    height: 1px;
-    width: 1px;
-    overflow: hidden;
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
 }
 
-*, *::before, *::after {
-            box-sizing: border-box;
+.visually-hidden {
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }

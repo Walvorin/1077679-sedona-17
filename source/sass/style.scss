@@ -1,19 +1,24 @@
 @charset 'utf-8';
-@font-face {
-    font-family: "PT Sans";
-    src: url(../fonts/ptsans.woff) format("woff"), /* все современные браузеры, IE9+ */
-          url(../fonts/ptsans.woff2) format("woff2"); /* все современные браузеры, IE9+ */
-         font-weight: normal;
-         font-style: normal;}
 
 @font-face {
-    font-family: "PT Sans";
-    src: url(../fonts/ptsansbold.woff) format("woff"), /* все современные браузеры, IE9+ */
-          url(../fonts/ptsansbold.woff2) format("woff2"); /* все современные браузеры, IE9+ */
-         font-weight: bold;
-         font-style: normal;}
+  font-family: "PT Sans";
+  src: url("../fonts/ptsans.woff") format("woff"),
+    url("../fonts/ptsans.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
 
-@import 'blocks/body';
-@import 'blocks/header';
-@import 'blocks/main-content';
-@import 'blocks/footer';
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/ptsansbold.woff") format("woff"),
+    url("../fonts/ptsansbold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@import "variables/variables";
+@import "blocks/body";
+@import "blocks/header";
+@import "blocks/main-content";
+@import "blocks/footer";
+@import "media/media";
