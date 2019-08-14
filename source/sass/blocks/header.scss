@@ -2,17 +2,48 @@
 
 .main-header {
   width: 320px;
+  height: 299px;
   margin: 0 auto;
+  position: relative;
 }
 
 .main-nav {
-  background-color: #ffffff;
+  width: 100%;
+  position: absolute;
+  background-color: $white;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  min-height: 56px;
+  bottom: 0;
+  z-index: 1;
 }
 
+.logo-link {
+  display: block;
+  position: absolute;
+  width: 102px;
+  height: 83px;
+  z-index: 1;
+  bottom: -28px;
+  left: 50%;
+  margin-left: -51px;
+}
+
+.logo-link__img {
+  @include imgsetup($bgz, $bgp);
+  background-image: url("../img/logo-sedona-mobile.svg");
+}
+
+.main-nav-list {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  bottom: 55px;
+}
 
 .main-nav-list__item {
   list-style: none;
-  width: 320px;
   box-sizing: border-box;
 }
 
@@ -28,6 +59,29 @@
   padding-right: 20px;
   padding-left: 20px;
   width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 1px 0 0 hsla(0, 0%, 100%, 0.21);
 }
 
+.main-nav-list__link:hover,
+.main-nav-list__link:focus {
+  background-color: $bluehover;
+}
+
+.main-nav-list__link:active {
+  background-color: $blueactive;
+}
+
+/*  Кнопка  */
+.burger-menu {
+  fill: $blue;
+  position: relative;
+  right: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  width: 23px;
+  height: 21px;
+  transform: translateX(277px);
+}
 /*      Конец Раздел Хедер      */

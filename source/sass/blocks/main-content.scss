@@ -20,7 +20,7 @@
   background-size: contain;
   background-position: bottom;
   position: absolute;
-  bottom: 0 px;
+  bottom: 0;
   z-index: 1;
 }
 
@@ -54,6 +54,16 @@
   background-position: center;
 }
 
+.intro-block-img__mount {
+  width: 282px;
+  height: 214px;
+  display: block;
+  transform: translateY(90px);
+  position: absolute;
+  left: 50%;
+  margin-left: -141px;
+}
+
 .intro-block-img--mini {
   width: 320px;
   height: 158px;
@@ -63,11 +73,11 @@
   content: "";
   display: block;
   width: 100%;
-  height: 26px;
+  height: 27.111px;
   background-image: url("../img/bg-intro-triangle-mobile.svg");
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: bottom;
+  background-size: cover;
+  background-position: center bottom;
   position: absolute;
   bottom: 0;
 }
@@ -95,7 +105,16 @@
 }
 
 .features-list__icon {
+  position: relative;
+  padding-left: 71px;
   padding-bottom: 17px;
+  padding-top: 40px;
+}
+
+.features-item__svg {
+  position: absolute;
+  left: 24px;
+  top: 32px;
 }
 
 .features-item__svg--fill {
@@ -155,7 +174,7 @@
 .features-item--icon-house,
 .features-item--icon-suvenir,
 .features-item--icon-burger {
-  color: #000000;
+  color: $black;
 }
 
 .features-item__h3--black {
@@ -168,8 +187,18 @@
 }
 
 .features-item--grey-bg {
-
   background-color: $grey;
+}
+
+.features-item__img-bridge,
+.features-item__img-town {
+  height: 260px;
+  overflow: hidden;
+}
+
+.features-item__img {
+  width: 100%;
+  height: 100%;
 }
 
 .features-item__wrapper {
