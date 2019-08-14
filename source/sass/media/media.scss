@@ -1,4 +1,8 @@
 @media (min-width: $tablet-width) {
+  .main-wrapper {
+    width: $tablet-width;
+  }
+
   .main-header {
     width: 768px;
     margin: 0 auto;
@@ -299,6 +303,10 @@
 
 
 @media (min-width: $desktop-width) {
+  .main-wrapper {
+    width: $desktop-width;
+  }
+
   .main-header {
     width: 1200px;
   }
@@ -306,6 +314,15 @@
   .main-nav {
     padding-left: 90px;
     padding-right: 65px;
+  }
+
+  .logo-link {
+    width: 187px;
+    margin-left: -93.5px;
+  }
+
+  .logo-link__img {
+    background-image: url("../img/logo-sedona-desktop.svg");
   }
 
   .main-nav-list__item {
