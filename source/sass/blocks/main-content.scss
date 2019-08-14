@@ -8,6 +8,7 @@
   position: relative;
   padding: 0;
   padding-bottom: 44px;
+  background-color: $white;
 }
 
 .intro-content--after::after {
@@ -64,6 +65,11 @@
   margin-left: -141px;
 }
 
+.intro-block-img__sedona {
+  position: absolute;
+  top: 20px;
+}
+
 .intro-block-img--mini {
   width: 320px;
   height: 158px;
@@ -79,7 +85,7 @@
   background-size: cover;
   background-position: center bottom;
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
 }
 
 .intro-block-img--normal {
@@ -175,6 +181,7 @@
 .features-item--icon-suvenir,
 .features-item--icon-burger {
   color: $black;
+  background-color: $white;
 }
 
 .features-item__h3--black {
@@ -254,6 +261,7 @@
   padding-top: 20px;
   box-sizing: border-box;
   border-bottom: 1px solid #e5e5e5;
+  background-color: $white;
 }
 
 .feedback-tourists__img {

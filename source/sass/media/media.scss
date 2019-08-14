@@ -17,8 +17,6 @@
 
   .main-nav {
     position: static;
-    padding-left: 49px;
-    padding-right: 25px;
   }
 
   .main-nav-list {
@@ -29,33 +27,25 @@
   }
 
   .main-nav-list__item {
-    width: 150px;
+    width: 20%;
+  }
+
+  .main-nav-list__item--change:nth-child(2) {
+    margin-right: auto;
+  }
+
+  .main-nav-list__item--change:nth-child(3) {
+    margin-left: auto;
   }
 
   .main-nav-list__link {
-    background-color: $white;
+    background-color: transparent;
     color: $black;
     border-bottom: none;
     font-size: 14px;
     line-height: 26px;
     font-weight: bold;
     padding: 0;
-  }
-
-  .list-item__link--left {
-    text-align: left;
-  }
-
-  .list-item__link--right {
-    text-align: right;
-  }
-
-  .main-nav-list__item:nth-child(2) {
-    margin-right: auto;
-  }
-
-  .main-nav-list__item:nth-child(3) {
-    margin-left: auto;
   }
 
   .main-nav-list__link:hover,
@@ -211,7 +201,7 @@
   /*  Страница отзывы туристов  */
 
   .intro-content {
-    padding-bottom: 0;
+    margin-bottom: 35px;
   }
 
   .intro-block-img--mini {
@@ -225,6 +215,10 @@
     height: 78px;
     display: block;
     margin: 0 auto;
+    position: absolute;
+    top: 95px;
+    left: 50%;
+    margin-left: -229px;
   }
 
   .subtitle-two--photo-page {
@@ -311,11 +305,6 @@
     width: 1200px;
   }
 
-  .main-nav {
-    padding-left: 90px;
-    padding-right: 65px;
-  }
-
   .logo-link {
     width: 187px;
     margin-left: -93.5px;
@@ -323,18 +312,6 @@
 
   .logo-link__img {
     background-image: url("../img/logo-sedona-desktop.svg");
-  }
-
-  .main-nav-list__item {
-    width: 170px;
-  }
-
-  .main-nav-list__item:first-child {
-    margin-right: 50px;
-  }
-
-  .main-nav-list__item:last-child {
-    margin-left: 67px;
   }
 
   .main-content {
