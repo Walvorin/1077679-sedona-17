@@ -29,10 +29,10 @@
   margin-left: -51px;
 }
 
-.logo-link__img {
-  @include imgsetup($bgz, $bgp);
-  background-image: url("../img/logo-sedona-mobile.svg");
-}
+// .logo-link__img {
+//   @include imgsetup($bgz, $bgp);
+//   background-image: url("../img/logo-sedona-mobile.svg");
+// }
 
 .main-nav-list {
   width: 100%;

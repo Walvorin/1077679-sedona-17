@@ -49,6 +49,10 @@
   width: 320px;
   height: 389px;
   background-image: url("../img/bg-back-mobile@1x.jpg");
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+  }
   background-color: #e1eef6;
   background-repeat: no-repeat;
   background-size: cover;
@@ -67,7 +71,10 @@
 
 .intro-block-img__sedona {
   position: absolute;
-  top: 20px;
+  top: 52px;
+  width: 229px;
+  left: 50%;
+  margin-left: -114.5px;
 }
 
 .intro-block-img--mini {
@@ -102,12 +109,56 @@
   padding: 0;
   margin: 0;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-content: flex-start;
 }
 
 .features-item {
   list-style: none;
   display: block;
   width: 100%;
+}
+
+.features-item:first-child {
+  order: 1;
+}
+
+.features-item:nth-child(2) {
+  order: 2;
+}
+
+.features-item:nth-child(3) {
+  order: 3;
+}
+
+.features-item:nth-child(4) {
+  order: 4;
+}
+
+.features-item:nth-child(5) {
+  order: 5;
+}
+
+.features-item:nth-child(6) {
+  order: 7;
+}
+
+.features-item:nth-child(7) {
+  order: 6;
+}
+
+.features-item:nth-child(8) {
+  order: 8;
+}
+
+.features-item:nth-child(9) {
+  order: 9;
+}
+
+.features-item:last-child {
+  order: 10;
 }
 
 .features-list__icon {
@@ -199,13 +250,7 @@
 
 .features-item__img-bridge,
 .features-item__img-town {
-  height: 260px;
   overflow: hidden;
-}
-
-.features-item__img {
-  width: 100%;
-  height: 100%;
 }
 
 .features-item__wrapper {
@@ -243,6 +288,11 @@
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-map-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
 }
 
 /*     End Карта навигации        */
@@ -302,24 +352,52 @@
   @include imgsetup (contain, center);
   background-image: url("../img/photo-sunset-mobile@1x.jpg");
   background-color: #ffc67f;
+  background-size: cover;
+  background-position: center;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/photo-sunset-mobile@2x.jpg");
+    background-size: 280px auto;
+  }
 }
 
 .feedback-tourists__img--sergei {
   @include imgsetup(contain, center);
   background-image: url("../img/photo-cactus-mobile@1x.jpg");
   background-color: #d2774b;
+  background-size: cover;
+  background-position: center;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/photo-cactus-mobile@2x.jpg");
+    background-size: 280px auto;
+  }
 }
 
 .feedback-tourists__img--petr {
   @include imgsetup(contain, center);
   background-image: url("../img/photo-roads-mobile@1x.jpg");
   background-color: #39392d;
+  background-size: cover;
+  background-position: center;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/photo-roads-mobile@2x.jpg");
+    background-size: 280px auto;
+  }
 }
 
 .feedback-tourists__img--anton {
   @include imgsetup(contain, center);
   background-image: url("../img/photo-bridge-mobile@1x.jpg");
   background-color: #ae7355;
+  background-size: cover;
+  background-position: center;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/photo-bridge-mobile@2x.jpg");
+    background-size: 280px auto;
+  }
 }
 
 .feedback-tourists__like-img {
