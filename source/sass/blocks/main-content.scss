@@ -278,7 +278,7 @@
 /*  Форма связи  */
 
 .search-hotel-main {
-  width: 320px;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -320,6 +320,7 @@
   padding-top: 5.3125%;
   padding-bottom: 5.9375%;
   font-weight: bold;
+  text-decoration: none;
 }
 
 .show-form:hover,
