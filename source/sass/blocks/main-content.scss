@@ -471,6 +471,89 @@
 
 .feedback-tourists__like-img {
   fill: rgba(0, 0, 0, 0.3);
+  width: 21px;
+  height: auto;
+}
+
+/*  Видеопрезентация  */
+
+.video-action {
+  width: 100%;
+  background-color: $white;
+  text-align: center;
+  padding-top: 40px;
+}
+
+.video-action h3 {
+  @include sizetext(18px, 26px, $black, $bigtext);
+  padding: 0;
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.video-action p {
+  @include sizetext(14px, 24px, $lightblack, $bigtext);
+  padding: 0;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.video-screen {
+  @include imgsetup($bgz, $bgp);
+  position: relative;
+  width: 100%;
+  height: 201px;
+  background-image: url("../img/video-mobile@1x.jpg");
+}
+
+.video-panel {
+  width: 87.5%;
+  height: 45px;
+  margin: 0 auto;
+  background-color: hsla(0, 0%, 0%, 0.6);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -43.75%;
+}
+
+.video-panel__line {
+  width: 83.9%;
+  height: 3px;
+  background-color: hsla(0, 0%, 100%, 0.2);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -41.95%;
+}
+
+.video-panel__ball {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: $white;
+  border: none;
+  position: absolute;
+  top: -3px;
+  left: 10%;
+}
+
+.video-panel__ball:hover,
+.video-panel__ball:focus {
+  background-color: hsla(0, 0%, 79%, 0.7);
+}
+
+.video-panel__ball:active {
+  background-color: hsla(0, 0%, 79%, 0.9);
+}
+
+.btn-reload,
+.btn-cc,
+.btn-resize {
+  border: none;
 }
 
 /*        End Страница с отзывами          */
