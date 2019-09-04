@@ -40,13 +40,45 @@
 
     <main class="main-content">
       <section class="intro-content">
-        <h1 class="visually-hidden">Добро пожаловать в Седону! Оставьте ваш отзыв о посещении Седоны.</h1>
         <div class="intro-block-img intro-block-img--mini">
           <img class="intro-block-img__sedona" width="282" height="214" src="../img/text-sedona.svg" alt="Фото Добро пожаловать в Седону">
         </div>
       </section>
+      <section class="form-review">
+        <h1>Оставьте свой отзыв</h1>
+        <p>Помогите нашим отелям стать лучше! Оставьте отзыв о низ, а также о посещенных вами достопримечательностях</p>
+        <form action="" class="main-form">
+          <div class="emotion">
+            <h2>Ваше общее впечатление:</h2>
+            <input aria-label="Чекбокс: выбрать положитльное" type="radio" id="good"><label for="good">Скорее положительное</label>
+            <input aria-label="Чекбокс: выбрать отрицательное" type="radio" id="bad"><label for="bad">Скорее отрицательное</label>
+            <input aria-label="Чекбокс: затрудняюсь ответить" type="radio" id="dontknow"><label for="dontknow">Затрудняюсь ответить</label>
+          </div>
+          <div class="present">
+            <h2>Представьтесь:</h2>
+            <label for="">Имя<sup>*</sup>:<input type="text"></label>
+            <label for="">Фамилия<sup>*</sup>:<input type="text"></label>
+            <label for="">Отчество<sup>*</sup>:<input type="text"></label>
+          </div>
+          <div class="contact-info">
+            <h2>Контактная информация:</h2>
+
+          </div>
+          <div class="visit-place">
+            <h2>Посещенные достопримечательности:</h2>
+            <label>Мост Дьявола<input type="checkbox"></label>
+            <label for="">Гора-Колокол<input type="checkbox"></label>
+            <label for="">Слайд-парк<input type="checkbox"></label>
+            <label for="">Красные скалы<input type="checkbox"></label>
+          </div>
+          <div class="write-emotion">
+            <h2>Опишите свои эмоции:</h2>
+            <input type="text">
+          </div>
+        </form>
+      </section>
+
       <!-- Здесь будет форма -->
-      <div class="delete"></div>
     </main>
 
     <footer class="main-footer">
