@@ -187,37 +187,72 @@
   .reaction-tourists {
     bottom: 29px;
   }
-}
 
-.feedback-tourists__img--boris {
-  background-image: url("../img/photo-sunset-desktop@1x.jpg");
+  .feedback-tourists__img--boris {
+    background-image: url("../img/photo-sunset-desktop@1x.jpg");
 
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/photo-sunset-desktop@2x.jpg");
-    background-size: 1200px auto;
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/photo-sunset-desktop@2x.jpg");
+      background-size: 1200px auto;
+    }
   }
-}
 
-.feedback-tourists__img--sergei {
-  background-image: url("../img/photo-cactus-desktop@1x.jpg");
+  .feedback-tourists__img--sergei {
+    background-image: url("../img/photo-cactus-desktop@1x.jpg");
 
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/photo-cactus-desktop@2x.jpg");
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/photo-cactus-desktop@2x.jpg");
+    }
   }
-}
 
-.feedback-tourists__img--petr {
-  background-image: url("../img/photo-roads-desktop@1x.jpg");
+  .feedback-tourists__img--petr {
+    background-image: url("../img/photo-roads-desktop@1x.jpg");
 
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/photo-roads-desktop@2x.jpg");
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/photo-roads-desktop@2x.jpg");
+    }
   }
-}
 
-.feedback-tourists__img--anton {
-  background-image: url("../img/photo-bridge-desktop@1x.jpg");
+  .feedback-tourists__img--anton {
+    background-image: url("../img/photo-bridge-desktop@1x.jpg");
 
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/photo-bridge-desktop@2x.jpg");
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/photo-bridge-desktop@2x.jpg");
+    }
   }
+  /*    Видеопрезентация    */
+  .video-action {
+    padding: 0;
+    margin-top: 50px;
+    padding-bottom: 85px;
+  }
+
+  .video-action h3 {
+    @include sizetext(30px, 26px, $black, $bigtext);
+  }
+
+  .video-action p {
+    width: 37.5%;
+    margin-bottom: 50px;
+  }
+
+  .video-screen {
+    width: 66.66%;
+    background-image: url("../img/video-desktop@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/video-desktop@2x.jpg");
+    }
+  }
+
+  .video-panel {
+    width: 100%;
+    margin: 0;
+    left: 0;
+  }
+
+  .video-panel__line {
+    width: 67.5%;
+  }
+  /*    Конец Видеопрезентация    */
 }

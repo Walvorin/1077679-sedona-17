@@ -361,4 +361,86 @@
   .reaction-tourists__petr {
     right: 37px;
   }
+
+  /*    Видеопрезентация    */
+  .video-action {
+    padding-bottom: 40px;
+  }
+
+  .video-action h3 {
+    @include sizetext(30px, 26px, $black, $bigtext);
+  }
+
+  .video-action p {
+    margin-bottom: 65px;
+  }
+
+  .video-screen {
+    height: 500px;
+    background-image: url("../img/video-tablet@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/video-tablet@2x.jpg");
+    }
+  }
+
+  .video-panel {
+    display: flex;
+    height: 63px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 35px;
+    padding-left: 35px;
+  }
+
+  .video-panel__line {
+    width: 60%;
+    position: static;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .video-panel__ball {
+    position: static;
+    margin-left: 20px;
+  }
+
+  .video-panel::after {
+    display: none;
+  }
+
+  .btn-reload,
+  .btn-cc,
+  .btn-resize {
+    position: static;
+  }
+
+  .btn-reload svg,
+  .btn-cc svg,
+  .btn-resize svg {
+    fill: $white;
+  }
+
+  .btn-reload:hover svg,
+  .btn-cc:hover svg,
+  .btn-resize:hover svg,
+  .btn-reload:focus svg,
+  .btn-cc:focus svg,
+  .btn-resize:focus svg {
+    fill: hsla(0, 0%, 100%, 0.6);
+  }
+
+  .btn-reload:active svg,
+  .btn-cc:active svg,
+  .btn-resize:active svg {
+    fill: hsla(0, 0%, 100%, 0.3);
+  }
+
+  .btn-cc {
+    margin-right: -30px;
+  }
+  /*    Конец Видеопрезентация    */
 }

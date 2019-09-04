@@ -482,6 +482,7 @@
   background-color: $white;
   text-align: center;
   padding-top: 40px;
+  padding-bottom: 115px;
 }
 
 .video-action h3 {
@@ -507,6 +508,12 @@
   width: 100%;
   height: 201px;
   background-image: url("../img/video-mobile@1x.jpg");
+  margin: 0 auto;
+  box-sizing: border-box;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/video-mobile@2x.jpg");
+  }
 }
 
 .video-panel {
@@ -518,6 +525,17 @@
   bottom: 0;
   left: 50%;
   margin-left: -43.75%;
+}
+
+.video-panel::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 66px;
+  margin: 0 auto;
+  position: absolute;
+  bottom: -66px;
+  background-color: #f2f2f2;
 }
 
 .video-panel__line {
@@ -554,6 +572,46 @@
 .btn-cc,
 .btn-resize {
   border: none;
+  position: absolute;
+  display: block;
+  z-index: 1;
+  background-color: transparent;
+}
+
+.btn-reload svg,
+.btn-cc svg,
+.btn-resize svg {
+  fill: $videobtn;
+}
+
+.btn-reload:hover svg,
+.btn-cc:hover svg,
+.btn-resize:hover svg,
+.btn-reload:focus svg,
+.btn-cc:focus svg,
+.btn-resize:focus svg {
+  fill: $videobtnhover;
+}
+
+.btn-reload:active svg,
+.btn-cc:active svg,
+.btn-resize:active svg {
+  fill: hsla(0, 0%, 0%, 0.3);
+}
+
+.btn-reload {
+  bottom: -45px;
+  left: 25px;
+}
+
+.btn-cc {
+  bottom: -45px;
+  right: 90px;
+}
+
+.btn-resize {
+  bottom: -45px;
+  right: 25px;
 }
 
 /*        End Страница с отзывами          */
