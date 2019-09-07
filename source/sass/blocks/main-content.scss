@@ -635,17 +635,32 @@
   width: 86%;
   padding: 0;
   margin: 0 auto;
+  margin-bottom: 20px;
 }
 
 .main-form {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  padding-right: 20px;
-  padding-left: 20px;
 }
 
 .main-form h2 {
   @include sizetext (18px, 26px, $black, $bigtext);
+  padding: 0;
+  margin: 0 auto;
+}
+
+.present,
+.contact-info,
+.emotion,
+.visit-place,
+.write-emotion {
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid $disabledbutton;
+  margin: 0 auto;
 }
 /*    Раздел "Представьтесь"     */
 .present {
@@ -656,29 +671,9 @@
   order: 1;
 }
 
-.contact-info {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  order: 2;
-}
-
-.emotion {
-  order: 3;
-}
-
-.visit-place {
-  order: 4;
-}
-
-.write-emotion {
-  order: 5;
-}
-
 .present h2 {
   width: 60%;
   text-align: center;
-  margin: 0 auto;
   margin-bottom: 25px;
 }
 
@@ -704,10 +699,20 @@
   border: none;
 }
 
+/*  Раздел Контактная информация  */
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  order: 2;
+  width: 100%;
+  margin: 0 auto;
+}
+
 .contact-info h2 {
   width: 85%;
   text-align: center;
-  margin: 0 auto;
   margin-bottom: 35px;
 }
 
@@ -728,7 +733,7 @@
 }
 
 .contact-info input {
-  @include sizetext (18px, 26px, $black, normal);
+  @include sizetext (18px, 26px, $black, inherit);
   font-weight: bold;
   background-color: $halfwhite;
   width: 100%;
@@ -749,6 +754,18 @@
   border: none;
 }
 
+/*    Раздел описание эмоций    */
+
+.emotion {
+  order: 3;
+}
+
+.emotion h2 {
+  width: 85%;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
 .emotion .emotion__wrapper {
   display: flex;
   flex-direction: column;
@@ -756,14 +773,8 @@
   flex-wrap: wrap;
 }
 
-.emotion h2 {
-  width: 85%;
-  text-align: center;
-  margin: 0 auto;
-}
-
 .emotion .psevdo-radio {
-  @include sizetext (18px, 26px, $black, normal);
+  @include sizetext (18px, 26px, $black, inherit);
   font-weight: bold;
   text-align: left;
   position: relative;
@@ -779,25 +790,144 @@
   left: 0;
   width: 34px;
   height: 34px;
+  background-color: $halfwhite;
   border: 10px solid $halfwhite;
   border-radius: 50%;
+  top: 50%;
+  margin-top: -17px;
 }
 
-// input[type="radio"]:focus:not(:checked) + .psevdo-checkbox {
-//   opacity: 0.6;
-// }
-
-.emotion__radio-btn1:hover:not(:disabled) + .psevdo-radio::before {
-  background-color: red;
-}
-
+.emotion__radio-btn:hover:not(:disabled) + .psevdo-radio::before,
+.emotion__radio-btn:focus + .psevdo-radio::before,
+.psevdo-radio:hover::before,
+.psevdo-radio:focus::before,
 .emotion__radio-btn:checked + .psevdo-radio::before {
-  background-color: red;
+  background-color: $lightblack;
+  border-color: $disabledbutton;
 }
 
+.emotion__radio-btn:active:not(:disabled) + .psevdo-radio::before,
+.psevdo-radio:active::before {
+  border-color: #d5d5d5;
+  background-color: hsla(0, 0%, 20%, 0.3);
+}
 
-// .emotion__radio-btn:hover:not(:disabled) + .psevdo-radio::before {
-//   background-color: blue;
-// }
+/*    Секция Посещенные места    */
 
+.visit-place {
+  width: 100%;
+  order: 4;
+}
+
+.visit-place h2 {
+  margin-bottom: 25px;
+}
+
+.visit-place__wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  align-content: flex-start;
+}
+
+.visit-place__wrapper .psevdo-checkbox {
+  @include sizetext (18px, 26px, $black, inherit);
+  font-weight: bold;
+  width: 100%;
+  text-align: left;
+  padding-left: 80px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.psevdo-checkbox::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -27.5px;
+  width: 55px;
+  height: 55px;
+  background-color: $halfwhite;
+  border-radius: 5px;
+}
+
+// .visit-checkbox:hover:not(:disabled) + .psevdo-checkbox1::before,
+// .visit-checkbox:hover:not(:disabled) + .psevdo-checkbox2::before,
+// .visit-checkbox:hover:not(:disabled) + .psevdo-checkbox3::before,
+// .visit-checkbox:hover:not(:disabled) + .psevdo-checkbox4::before,
+.psevdo-checkbox:hover::before {
+  @include imgsetup (24px auto, center);
+  background-color: $disabledbutton;
+  background-image: url("../img/icon-tick.svg");
+  fill: $black;
+}
+
+.visit-checkbox:checked + .psevdo-checkbox::before,
+.visit-checkbox:active:not(:disabled) + .psevdo-checkbox::before,
+.psevdo-checkbox:active::before {
+  @include imgsetup (24px auto, center);
+  background-color: #d5d5d5;
+  background-image: url("../img/icon-tick.svg");
+  fill-opacity: 0.3;
+}
+
+.visit-checkbox:disabled + .psevdo-checkbox::before {
+  background-image: none;
+  background-color: $halfwhite;
+}
+
+.write-emotion {
+  width: 100%;
+  order: 5;
+}
+
+.write-emotion h2 {
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.write-emotion__area {
+  @include sizetext (18px, 26px, $black, inherit);
+  font-weight: bold;
+  width: 100%;
+  height: 200px;
+  padding: 20px;
+  background-color: $halfwhite;
+  border: none;
+  margin-bottom: 50px;
+}
+
+.btn-submit-wrapper {
+  order: 6;
+  width: 87.5%;
+  margin: 0 auto;
+}
+
+.submit-btn {
+  @include sizetext(21px, 26px, $white, $bigtext);
+  font-weight: bold;
+  display: block;
+  background-color: $blue;
+  width: 100%;
+  margin: 0 auto;
+  border: none;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 45px;
+  padding-left: 45px;
+}
+
+.submit-btn:hover,
+.submit-btn:focus {
+  background-color: $bluehover;
+}
+
+.submit-btn:active {
+  background-color: $blueactive;
+  color: hsla(0, 0%, 100%, 0.3);
+}
 /*      Конец Страница отзыва        */

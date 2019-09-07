@@ -50,26 +50,30 @@
         <form action="" class="main-form">
           <div class="present">
             <h2>Представьтесь:</h2>
-            <label for="">Имя<sup>*</sup>:<input type="text" placeholder="Петр"></label>
-            <label for="">Фамилия<sup>*</sup>:<input type="text" placeholder="Иванов"></label>
-            <label for="">Отчество<sup>*</sup>:<input type="text" placeholder="Александровович"></label>
+            <label for="name">Имя<sup>*</sup>:<input aria-label="Поле для ввода имени" id="name" name="name" type="text" placeholder="Петр"></label>
+            <label for="surname">Фамилия<sup>*</sup>:<input aria-label="Поле для ввода фамилии" id="surname" name="surname" type="text" placeholder="Иванов"></label>
+            <label for="father-name">Отчество<sup>*</sup>:<input aria-label="Поле для ввода отчества" id="father-name" name="father-name" type="text" placeholder="Александровович"></label>
           </div>
           <div class="contact-info">
             <h2>Контактная информация:</h2>
-            <label for="">Контактный телефон<sup>*</sup>:</label>
+            <label for="enter-phone">Контактный телефон<sup>*</sup>:</label>
             <div class="phone">
-              <input id="enter-phone" type="text" placeholder="Введите телефон">
+              <input aria-label="Строка для ввода номера телефона" id="enter-phone" type="tel" placeholder="Введите телефон">
               <button class="icon-phone">
-                <svg width="20" height="18">
+                <svg width="20" height="18" aria-labelledby="btn-for-phone">
+                  <title id="btn-for-phone">Кнопка для ввода номера телефона</title>
                   <use xlink:href="img/sprite.svg#icon-phone"></use>
                 </svg>
               </button>
             </div>
               <label for="enter-email">Электронная почта<sup>*</sup>:</label>
               <div class="email">
-                <input id="enter-email" type="text" placeholder="Введите e-mail">
+                <input aria-label="Строка для ввода адреса E-mail" id="enter-email" type="email" placeholder="Введите e-mail">
                 <button>
-                  <svg width="20" height="18"><use xlink:href="img/sprite.svg#icon-mail"></use></svg>
+                  <svg width="20" height="18" aria-labelledby=="btn-for-email">
+                    <titile id="btn-for-email">Кнопка для ввода email</titile>
+                    <use xlink:href="img/sprite.svg#icon-mail"></use>
+                  </svg>
                 </button>
               </div>
           </div>
@@ -77,7 +81,7 @@
           <div class="emotion">
             <h2>Ваше общее впечатление:</h2>
             <div class="emotion__wrapper">
-              <input class="emotion__radio-btn1 visually-hidden" aria-label="Чекбокс: выбрать положитльное" name="change" type="radio" id="good" value="good">
+              <input class="emotion__radio-btn visually-hidden" aria-label="Чекбокс: выбрать положитльное" name="change" type="radio" id="good" value="good" checked>
               <label class="psevdo-hover psevdo-radio" for="good">Скорее положительное</label>
               <input class="emotion__radio-btn visually-hidden"  aria-label="Чекбокс: выбрать отрицательное" name="change" type="radio" id="bad" value="bad">
               <label class="psevdo-hover psevdo-radio" for="bad">Скорее отрицательное</label>
@@ -87,14 +91,23 @@
           </div>
           <div class="visit-place">
             <h2>Посещенные достопримечательности:</h2>
-            <label>Мост Дьявола<input type="checkbox"></label>
-            <label for="">Гора-Колокол<input type="checkbox"></label>
-            <label for="">Слайд-парк<input type="checkbox"></label>
-            <label for="">Красные скалы<input type="checkbox"></label>
+            <div class="visit-place__wrapper">
+              <input aria-label="Посещенное место: Мост Дьявола" class="visit-checkbox visually-hidden" id="bridge-diablo" type="checkbox">
+              <label class="psevdo-checkbox psevdo-checkbox1" for="bridge-diablo">Мост Дьявола</label>
+              <input aira-label="Посещенное место: Гора Колокол" class="visit-checkbox visually-hidden" id="mount-ball" type="checkbox">
+              <label class="psevdo-checkbox psevdo-checkbox2" for="mount-ball">Гора-Колокол</label>
+              <input aria-label="Посещенное место: Слайд Парк" class="visit-checkbox visually-hidden" id="slide-park" type="checkbox">
+              <label class="psevdo-checkbox psevdo-checkbox3" for="slide-park">Слайд-парк</label>
+              <input aria-label="Посещенное место: Красные скалы" class="visit-checkbox visually-hidden" id="red-rocks" type="checkbox">
+              <label class="psevdo-checkbox psevdo-checkbox4" for="red-rocks">Красные скалы</label>
+            </div>
           </div>
           <div class="write-emotion">
             <h2>Опишите свои эмоции:</h2>
-            <input type="text">
+            <textarea aria-label="Поле для ввода своих эмоции о посещенных местах" class="write-emotion__area" name="write-emotion-tourists" placeholder="Опишите подробно все свои восторги"></textarea>
+          </div>
+          <div class="btn-submit-wrapper">
+            <button class="submit-btn" type="submit">Отправить отзыв</button>
           </div>
         </form>
       </section>
