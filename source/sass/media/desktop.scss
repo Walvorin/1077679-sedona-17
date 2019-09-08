@@ -255,4 +255,83 @@
     width: 67.5%;
   }
   /*    Конец Видеопрезентация    */
+  /*    Страница отзыва туристов    */
+  .form-review h1 {
+    margin-bottom: 35px;
+  }
+
+  .main-form {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .form-review .form-review__intro {
+    width: 43.8%;
+    margin-bottom: 50px;
+  }
+
+  .emotion {
+    width: 40%;
+    padding: 0;
+    margin: 0;
+    margin-right: auto;
+  }
+
+  .emotion h2 {
+    padding-left: 6.66%;
+  }
+
+  .present {
+    width: 40%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .present input {
+    width: 100%;
+  }
+
+  .contact-info {
+    width: 100%;
+    padding: 0;
+    flex-wrap: nowrap;
+  }
+
+  .contact-info h2 {
+    margin-bottom: 50px;
+    align-self: center;
+  }
+
+  .contact-info label:first-of-type {
+    width: 7.66%;
+    padding: 0;
+    display: inline-block;
+  }
+
+  .contact-info label:last-of-type {
+    width: 15.66%;
+    padding: 0;
+    display: inline-block;
+  }
+
+  .contact-info label:first-of-type::before {
+    content: "Телефон";
+  }
+
+  .contact-info .phone,
+  .contact-info .email {
+    width: 26.25%;
+    display: inline-block;
+  }
+
+  .contact-info .phone {
+    margin-right: auto;
+  }
+
+  .contact-info__wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
 }

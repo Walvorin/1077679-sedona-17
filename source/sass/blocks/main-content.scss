@@ -630,7 +630,7 @@
   margin-bottom: 20px;
 }
 
-.form-review p {
+.form-review .form-review__intro {
   @include sizetext (14px, 24px, $black, $bigtext);
   width: 86%;
   padding: 0;
@@ -721,6 +721,10 @@
   width: 100%;
   text-align: left;
   margin-bottom: 15px;
+}
+
+.contact-info label:first-of-type::before {
+  content: "Контактный телефон";
 }
 
 .contact-info div {

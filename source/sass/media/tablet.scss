@@ -445,6 +445,17 @@
   /*    Конец Видеопрезентация    */
   /*    Страница с отзывами    */
 
+  .form-review h1 {
+    @include sizetext (30px, 26px, $black, $bigtext);
+    font-weight: bold;
+    width: 46.875%;
+    margin-bottom: 28px;
+  }
+
+  .form-review .form-review__intro {
+    width: 59.8%;
+  }
+
   .main-form {
     flex-direction: row;
     align-items: flex-start;
